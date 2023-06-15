@@ -24,5 +24,15 @@ class My_plane{
         int create_frame_my_plane; //initialize when it creates
         int check_frame_my_plane=0;
         vector<Bullet> bullet;
+        void plus_score(int reward) {
+            score = score + reward;
+        }
+        void minus_hp(int damage) {
+            hp = hp - damage;
+        }
+
+    private:
+        int score = 0;
+        int hp = 5;
 };
 #endif
